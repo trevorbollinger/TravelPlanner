@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Hotels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hotel-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .hotel-card h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+        }
+        .hotel-card p {
+            margin: 5px 0;
+        }
+        .hotel-card .distance {
+            font-weight: bold;
+        }
+        .no-hotels {
+            text-align: center;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hotels Near PKI</h1>
+
+        {% if data.data %}
+            {% for hotel in data.data %}
+                <div class="hotel-card">
+                    <h2>{{ hotel.name }}</h2>
+                    <p class="distance">Distance: {{ hotel.distance.value }} {{ hotel.distance.unit }}</p>
+                    <p>Hotel ID: {{ hotel.hotelId }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p class="no-hotels">No hotels found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
