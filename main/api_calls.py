@@ -1,6 +1,5 @@
 import requests
 import os
-from django.shortcuts import render
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -44,7 +43,6 @@ def get_hotels():
     api_data = api_response.json()
 
     #print(api_data)
-
     return api_data
 
 def get_attrs():
@@ -61,6 +59,5 @@ def get_attrs():
     api_response = requests.get(api_url, params=api_params, headers=api_headers)
     api_data = api_response.json()
 
-    print(api_data)
-
+    #print(api_data)
     return api_data
