@@ -1,0 +1,59 @@
+{
+  "data": [
+    {
+      "chainCode": "RC",
+      "iataCode": "OMA",
+      "dupeId": 501441233,
+      "name": "RESIDENCE INN AKSARBN MARRIOTT",
+      "hotelId": "RCOMAKVR",
+      "geoCode": {
+        "latitude": 41.24286,
+        "longitude": -96.01458
+      },
+      "address": {
+        "countryCode": "US" 
+      },
+      "distance": {
+        "value": 0.32,
+        "unit": "MILE"
+      },
+      "lastUpdate": "2024-01-24T19:53:37"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "OMA",
+      "dupeId": 700115862,
+      "name": "RESIDENCE INN OMAHA MARRIOTT",
+      "hotelId": "RCOMANBR",
+      "geoCode": {
+        "latitude": 41.26103,
+        "longitude": -96.02052
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "distance": {
+        "value": 0.97,
+        "unit": "MILE"
+      },
+      "lastUpdate": "2023-06-15T09:55:48"
+    },
+    {
+      "chainCode": "EO",
+      "iataCode": "OMA",
+      "dupeId": 700066504,
+      "name": "ECONO LODGE WEST DODGE",
+      "hotelId": "EOOMA409",
+      "geoCode": {
+        "latitude": 41.25945,
+        "longitude": -96.03504
+      }
+    }
+  ],
+  "meta": {
+    "count": 18,
+    "links": {
+      "self": "https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-geocode?hotelSource=ALL&latitude=41.247219258801884&longitude=-96.01676854329351&radius=3&radiusUnit=MILE"
+    }
+  }
+}
