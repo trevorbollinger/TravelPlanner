@@ -42,7 +42,7 @@ def get_hotels():
     api_response = requests.get(api_url, params=api_params, headers=api_headers)
     api_data = api_response.json()
 
-    #print(api_data)
+    print(api_data)
     return api_data
 
 def get_attrs():
@@ -59,5 +59,5 @@ def get_attrs():
     api_response = requests.get(api_url, params=api_params, headers=api_headers)
     api_data = api_response.json()
 
-    #print(api_data)
+    print(api_data)
     return api_data
